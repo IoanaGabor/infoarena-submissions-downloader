@@ -1,8 +1,7 @@
 from os.path import abspath
 
 from score_and_id_parser import ScoreAndIdParser
-
-
+from bs4 import BeautifulSoup
 class Utils:
     @staticmethod
     def save_code_to_file(code, folder, name):
@@ -15,7 +14,7 @@ class Utils:
     @staticmethod
     def get_problem_ids(html_page):
         score_id_parser = ScoreAndIdParser()
-        score_id_parser.feed(html_page)
+        score_id_parser.parse_html(html_page)
         return score_id_parser.data
 
     @staticmethod

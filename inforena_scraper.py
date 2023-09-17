@@ -26,7 +26,7 @@ class InfoarenaScraper:
     def get_source_code(self, problem_code):
         text = self.get_problem_page(problem_code)
         code_parser = CodeParser()
-        code_parser.feed(text)
+        code_parser.parse_html(text)
         return code_parser.problem_name, code_parser.code[0]
 
     def get_problems_page(self, first_entry, display_entries):
