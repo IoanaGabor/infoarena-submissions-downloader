@@ -15,7 +15,6 @@ class MultithreadedCodeWriter:
     @staticmethod
     def save_code_to_file(code, folder, name):
         path = abspath(f"{folder}/{name}.cpp")
-        print(path)
         fi = open(path, "w")
         fi.writelines(code)
         fi.close()

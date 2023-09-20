@@ -1,12 +1,12 @@
 from os.path import abspath
 
 from score_and_id_parser import ScoreAndIdParser
-from bs4 import BeautifulSoup
+
+
 class Utils:
     @staticmethod
     def save_code_to_file(code, folder, name):
         path = abspath(f"{folder,}/{name}.cpp")
-        print(path)
         fi = open(path, "w")
         fi.writelines(code)
         fi.close()
@@ -18,7 +18,7 @@ class Utils:
         return score_id_parser.data
 
     @staticmethod
-    def get_highest_score_only(codes):
+    def get_correct_submissions_only(codes):
         highest_score = []
         for code in codes:
             if "100" in code[1]:
