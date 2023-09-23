@@ -1,6 +1,6 @@
 import requests
 
-from endpoints import SOLUTION_CODE_PAGE_URL, PROBLEMS_PAGE_URL
+from request_handling.endpoints import SOLUTION_CODE_PAGE_URL, PROBLEMS_PAGE_URL
 
 
 class InfoarenaRequestHandler:

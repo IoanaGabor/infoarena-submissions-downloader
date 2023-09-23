@@ -1,6 +1,6 @@
-from configuration import Configuration
-from inforena_scraper import InfoarenaScraper
-from log import LoggerUtils
+from utils.configuration import Configuration
+from scraper.inforena_scraper import InfoarenaScraper
+from utils.log import LoggerUtils
 
 if __name__ == "__main__":
     logger = LoggerUtils.set_up_logger()

@@ -1,3 +1,5 @@
 Folder to be saved in: #provide the folder to be saved in
-Number of entries: #provide the number of entries - should be integer
+Number of entries of a page: #provide the number of entries of a page - should be an integer, lower than or equal to 250
+Start page index: #provide the index of the start page - should be an integer, indexing starts from 1 (as on the website)
+End page index: #provide the index of the end page - should be an integer, indexing starts from 1 (as on the website)
 User name: #provide the username

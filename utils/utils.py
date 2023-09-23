@@ -1,6 +1,6 @@
 from os.path import abspath
 
-from score_and_id_parser import ScoreAndIdParser
+from scraper.parsers.score_and_id_parser import ScoreAndIdParser
 
 
 class Utils:
